@@ -4,7 +4,8 @@
 # make the thing if its not already
 mkdir -p /data/Astro/Saved/Config/WindowsServer
 
-echo "[URL]\nPort=$SERVERPORT" > /data/Astro/Saved/Config/WindowsServer/Engine.ini
+cp /static/Engine.ini /data/Astro/Saved/Config/WindowsServer/Engine.ini
+sed -i "s/%%SERVERPORT%%/$SERVERPORT/g" /data/Astro/Saved/Config/WindowsServer/Engine.ini
 
 cp /static/AstroServerSettings.ini /data/Astro/Saved/Config/WindowsServer/AstroServerSettings.ini
 sed -i "s/%%MAXFRAMERATE%%/$MAXFRAMERATE/g" /data/Astro/Saved/Config/WindowsServer/AstroServerSettings.ini
