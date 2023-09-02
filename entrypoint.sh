@@ -12,5 +12,6 @@ sed -i "s/%%PUBLICIP%%/$PUBLICIP/g" /data/Astro/Saved/Config/WindowsServer/Astro
 sed -i "s/%%OWNERNAME%%/$OWNERNAME/g" /data/Astro/Saved/Config/WindowsServer/AstroServerSettings.ini
 sed -i "s/%%OWNERGUID%%/$OWNERGUID/g" /data/Astro/Saved/Config/WindowsServer/AstroServerSettings.ini
 sed -i "s/%%SERVERPASSWORD%%/$SERVERPASSWORD/g" /data/Astro/Saved/Config/WindowsServer/AstroServerSettings.ini
+sed -i "s/%%SERVERNAME%%/$SERVERNAME/g" /data/Astro/Saved/Config/WindowsServer/AstroServerSettings.ini
 
 wine /data/AstroServer.exe
